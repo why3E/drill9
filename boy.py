@@ -168,7 +168,7 @@ class StateMachine:
         self.table = {
             Idle: {right_down: Run, left_down: Run, left_up: Idle, right_up: Idle, time_out: Sleep, a_key_down: AutoRun},
             Run: {right_down: Idle, left_down: Idle, right_up: Idle, left_up: Idle, a_key_down: AutoRun},
-            Sleep: {right_down: Run, left_down: Run, right_up: Idle, left_up: Idle, space_down: Idle, a_key_down: AutoRun},
+            Sleep: {right_down: Run, left_down: Run, right_up: Idle, left_up: Idle, space_down: Idle},
             AutoRun: {right_down: Run, left_down: Run, right_up: Idle, left_up: Idle, space_down: Idle, time_out: Idle}
         }
 
