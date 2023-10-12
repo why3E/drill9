@@ -112,9 +112,9 @@ class Run:
     @staticmethod
     def enter(boy, e):
         boy.frame = 0
-        if right_down(e) or left_up(e):  # 오른쪽으로 RUN
+        if right_down(e) or left_up(e):  # right Run
             boy.dir, boy.action = 1, 1
-        elif left_down(e) or right_up(e):  # 왼쪽으로 RUN
+        elif left_down(e) or right_up(e):  # left Run
             boy.dir, boy.action = -1, 0
 
     @staticmethod
